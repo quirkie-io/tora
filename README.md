@@ -1,4 +1,4 @@
-<img alt="tora banner" src="https://github.com/quirkie-io/tora/raw/main/.github/banner.png"/>
+<img alt="tora banner" src="https://github.com/quirkie-io/tora/raw/main/.github/banner.webp"/>
 
 <div align="center">
     <img src="https://badgen.net/npm/v/tora-spinner?" alt="NPM Version" />
