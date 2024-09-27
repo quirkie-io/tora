@@ -10,10 +10,7 @@
     "test": "vitest run",
     "coverage": "vitest run --coverage",
     "format": "biome format",
-    "release": "turbo run release --concurrency=1",
-    "ui:dev": "vite",
-    "ui:build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "release": "turbo run release --concurrency=1"
   },
   "sideEffects": false,
   "main": "./dist/index.js",
@@ -61,8 +58,6 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@types/node": "^22.5.5",
-    "@vitejs/plugin-react": "^4.3.1",
-    "@vitest/coverage-v8": "^2.1.1",
     "commitizen": "^4.3.0",
     "release-it": "^17.6.0",
     "rimraf": "^6.0.1",
