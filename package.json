@@ -9,7 +9,7 @@
     "build": "rimraf dist && rollup -c",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
-    "format": "biome format",
+    "format": "biome format --write .",
     "release": "turbo run release --concurrency=1"
   },
   "sideEffects": false,
