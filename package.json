@@ -1,5 +1,5 @@
 {
-  "name": "tora",
+  "name": "tora-spinner",
   "version": "1.0.0",
   "description": "A thread/worker spinner based on ora/yocto-spinner ✨",
   "type": "module",
@@ -42,11 +42,11 @@
     "email": "contato@victormesquita.dev"
   },
   "license": "UNLICENSED",
-  "homepage": "https://github.com/quirkie-io/tora#readme",
-  "bugs": "https://github.com/quirkie-io/tora/issues",
+  "homepage": "https://github.com/quirkie-io/tora-spinner#readme",
+  "bugs": "https://github.com/quirkie-io/tora-spinner/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quirkie-io/tora"
+    "url": "https://github.com/quirkie-io/tora-spinner"
   },
   "engines": {
     "node": "^18.0.0 || >=20.0.0"

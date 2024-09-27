@@ -17,19 +17,19 @@
 #### With npm
 
 ```sh
-npm i tora
+npm i tora-spinner
 ```
 
 #### With yarn
 
 ```sh
-yarn add tora
+yarn add tora-spinner
 ```
 
 ## Usage
 
 ```js
-import tora from "tora";
+import tora from "tora-spinner";
 
 const spinner = tora({ text: "Loading…" }).start();
 
