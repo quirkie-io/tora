@@ -1,8 +1,8 @@
-<img alt="tora banner" src="https://github.com/quirkie-io/tora/raw/main/.github/banner.jpg"/>
+<img alt="tora banner" src="https://github.com/quirkie-io/tora/raw/main/.github/banner.png"/>
 
 <div align="center">
-    <img src="https://badgen.net/npm/v/tora?" alt="NPM Version" />
-    <img src="https://github.com/quirkie-io/tora/workflows/CI/badge.svg" alt="Build Status" />
+    <img src="https://badgen.net/npm/v/tora-spinner?" alt="NPM Version" />
+    <img src="https://github.com/quirkie-io/tora/actions/workflows/ci.yaml/badge.svg" alt="Build Status" />
 </a>
 </div>
 <br />
