@@ -31,11 +31,21 @@ yarn add tora-spinner
 ```js
 import tora from "tora-spinner";
 
-const spinner = tora({ text: "Loading…" }).start();
+const spinner = tora({ text: "Loading…" });
 
-setTimeout(() => {
-  spinner.success("Success!");
-}, 2000);
+async function main() {
+  await spinner.start();
+
+  // Do some work
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+
+  await spinner.stop("Stopped.");
+
+  // Kill spinner worker thread
+  spinner.terminate();
+}
+
+main();
 ```
 
 ## API
@@ -153,6 +163,12 @@ Returns the instance.
 Stops the spinner and displays an info symbol with the message.
 
 Returns the instance.
+
+#### .terminate()
+
+Kills the spinner worker thread.
+
+Returns void.
 
 ```js
 spinner.info("Info.");

@@ -40,6 +40,7 @@ const external = [
 const entries = {
   index: 'src/tora.ts',
   toraSync: 'src/tora-sync.ts',
+  worker: 'src/worker.ts',
 }
 
 const dtsEntries = {
@@ -49,6 +50,19 @@ const dtsEntries = {
 
 export default ({ watch }) =>
   defineConfig([
+    {
+      input: { ...entries, 'tora.test': 'src/tora.test.ts' },
+
+      treeshake: true,
+      output: {
+        dir: 'testDist',
+        format: 'esm',
+        chunkFileNames: 'chunks/[name].[hash].js',
+      },
+      external: [...external, 'vitest', 'vitest/dist/index.d.ts'],
+      plugins: [...plugins],
+      onwarn,
+    },
     {
       input: entries,
 
@@ -61,17 +75,6 @@ export default ({ watch }) =>
       external,
       plugins: [...plugins],
       onwarn,
-    },
-    {
-      input: 'src/worker.ts',
-      output: [
-        {
-          file: 'dist/worker.js',
-          format: 'esm',
-        },
-      ],
-      external,
-      plugins,
     },
     {
       input: dtsEntries,
